@@ -1,0 +1,66 @@
+.contenedor {  
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgb(16 12 12 / 50%), rgb(122 42 42 / 50%)),
+    url("../../../assets/fondo.jpeg");
+  background-size: cover;
+}
+
+.flexContainer {
+  opacity: 1;
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.flexColumn {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  width: 30vw;
+  height: auto;
+}
+
+.titulo {
+  color: #c5fffd;
+  font-size: xx-large;
+  cursor: pointer;
+
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.neon{
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.flexTitulo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.caja {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+}
+.flexContainer div {
+  transition: 0.5s;
+}
+
+.flexContainer div:hover {
+  transform: translate(0px, -10px);
+  transition: 0.5s;
+}

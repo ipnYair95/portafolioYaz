@@ -1,0 +1,39 @@
+.navbar{
+    position: fixed !important;
+    width: 100%;
+    z-index: 10000;
+}
+
+.flexContainer{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#navbarSupportedContent button, a{
+    font-size: large;
+    margin-left: 2rem;
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: #33f971;
+    padding: 2px 15px;
+}
+
+
+#navbarSupportedContent button:hover, a:hover{         
+    background: #9c50da;
+    color: #fff;       
+    border-radius: 10px;
+}
+
+
+@media ( max-width: 990px ) {
+    .flexContainer{     
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}

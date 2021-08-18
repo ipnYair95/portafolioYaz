@@ -17,6 +17,10 @@ export class AppComponent  {
       titulo: 'About',
       route: 'dashboard/about',
     },
+    {
+      titulo: 'Experiencias y educación',
+      route: 'dashboard/experiencias',
+    },
   ];
 
   title = 'patita';

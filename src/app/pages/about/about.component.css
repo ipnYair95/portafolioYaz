@@ -1,11 +1,69 @@
 .contenedor {  
     position: relative;
-    height: 100vh;
+    height: auto;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-image: linear-gradient(rgb(16 12 12 / 50%), rgb(122 42 42 / 50%)),
       url("../../../assets/fondo.jpeg");
     background-size: cover;
+  }
+
+  *{
+    color: #fff;
+  }
+
+  .card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .card{   
+    transition: 0.5s;
+  }
+
+  .flexContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .cardAbout{
+    background: rgb(86 65 126 / 50%);
+    border-radius: 2rem;
+    border:none;
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .card-header{
+    border-bottom: 5px dotted #c73656;
+  }
+
+  .cardAct{    
+    background: rgb(65 199 101 / 50%);
+    border-radius: 2rem;
+    border:none;
+    width: 17rem;
+    height: 17rem;
+  }
+
+.cardAct .card-body{
+    justify-content: flex-start !important;
+  }
+
+  .card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-header{
+    font-size: x-large;
+  }
+
+  @media (min-width: 1310px) {
+    .contenedor{
+      height: 100vh;
+    }
   }

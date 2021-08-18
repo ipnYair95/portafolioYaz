@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-
-body, .fondo{
-    background: #dbc8c8;
+body,
+.fondo {
+  background: #dbc8c8;
 }
 
-*{
-    font-family: cursive;
+* {
+  font-family: cursive;
 }
+

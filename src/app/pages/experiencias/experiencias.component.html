@@ -1,0 +1,55 @@
+<div class="contenedor">
+
+  <div class="animate__animated animate__fadeIn p-5">
+    <h2>Experiencias</h2>
+
+  <div
+    id="carouselExampleSlidesOnly"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">      
+      <div class="carousel-item active" *ngFor="let item of experiencias.slice(0,1)">
+          <img [src]="item.img" >     
+          <div class="desc">
+            <p> {{ item.titulo }} </p>
+            <p> {{ item.descripcion }} </p>
+          </div>     
+        </div>      
+        <div class="carousel-item " *ngFor="let item of experiencias.slice(1)">
+          <img [src]="item.img" >          
+          <div class="desc">
+            <p> {{ item.titulo }} </p>
+            <p> {{ item.descripcion }} </p>
+          </div>     
+        </div>      
+    </div>
+  </div>
+
+  <h2>Educación</h2>
+  
+  <div
+    id="carouselExampleSlidesOnly2"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">      
+      <div class="carousel-item active" *ngFor="let item of educacion.slice(0,1)">
+          <img [src]="item.img" >     
+          <div class="desc">
+            <p> {{ item.titulo }} </p>            
+          </div>     
+        </div>      
+        <div class="carousel-item " *ngFor="let item of educacion.slice(1)">
+          <img [src]="item.img" >          
+          <div class="desc">
+            <p> {{ item.titulo }} </p>            
+          </div>     
+        </div>      
+    </div>
+  </div>
+
+  <div class="mt-5">sdd</div>
+  </div>
+
+</div>

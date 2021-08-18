@@ -61,3 +61,13 @@ img {
   transform: translate(0px, -10px);
   transition: 0.5s;
 }
+
+
+@media (max-width: 800px ) {
+  .neon{
+    text-shadow: none;
+  }
+  .neon *{
+    color: #fff;    
+  }
+}

@@ -1,0 +1,27 @@
+<div class="contenedor">
+  <div class="animate__animated animate__fadeIn p-5">
+    <div style="font-size: xx-large; text-align: center;" >
+      Videos
+    </div>
+    <div class="flexContainer mt-5">
+      
+      <div *ngFor="let item of videos" style="text-align: center; font-size: xx-large;" >
+        <div>
+          {{ item.titulo }}
+        </div>
+        <div>
+          <youtube-player
+            [videoId]="transform(item.target)"
+            suggestedQuality="small"
+            [height]="250"
+            [width]="300"
+            [startSeconds]="4"
+            [endSeconds]="8"
+          >
+          </youtube-player>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-experiencias',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experiencias.component.css']
 })
 export class ExperienciasComponent implements OnInit {
+
+  ptrExp: number = 0;
+
 
   experiencias = [
     {
@@ -23,19 +26,23 @@ export class ExperienciasComponent implements OnInit {
   educacion = [
     {
       titulo: 'LICENCIATURA PASANTE • CIENCIAS DE LA COMUNICACIÓN 2017-2020 • CESCIJUC',
-      img: '../../../assets/camara.jpg',
+      img: '../../../assets/com.jpg',      
       descripcion: `Dar mantenimiento a las computadoras, instalar programas, capturar datos y realizar inventarios.`
     },
     {
       titulo: 'CONALEP IXTAPALUCA 236 • P.T.B EN INFORMÁTICA • 2012-2015',
-      img: '../../../assets/pgj.jpg',
+      img: '../../../assets/info.jpg',
       descripcion: `Buscar, escanear, digitalizar y coser expedientes.`
     }
   ]
 
-  constructor() { }
+  constructor( ) {
+   }
 
   ngOnInit(): void {
+
+     
   }
+
 
 }

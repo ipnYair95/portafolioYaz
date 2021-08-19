@@ -14,10 +14,15 @@
   flex-wrap: wrap;
 }
 
+.picsum-img-wrapper{
+  text-align: center;
+}
+
 img {
   width: 60%;
   height: auto;
   border-radius: 20px;
+  opacity: 0.7;
 }
 
 .carousel-item{
@@ -33,12 +38,7 @@ h2{
 i {
   color: yellow;
 }
-
-@media (min-width: 1310px) {
-  .contenedor {
-    height: 100vh;
-  }
-}
+ 
 
 .desc {
   padding-top: 3rem;
@@ -51,9 +51,4 @@ i {
   }
 }
 
-
-@media (min-width: 1310px) {
-  .contenedor{
-    height: 100vh;
-  }
-}
+ 

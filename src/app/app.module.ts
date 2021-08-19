@@ -5,6 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { IndexModule } from './index/index.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+import { HttpClientModule } from '@angular/common/http';
+
+
+
 
 @NgModule({
   declarations: [
@@ -14,7 +20,12 @@ import { IndexModule } from './index/index.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    IndexModule
+    IndexModule,
+    BrowserAnimationsModule,
+    YouTubePlayerModule,
+    HttpClientModule
+  
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

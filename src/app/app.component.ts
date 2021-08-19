@@ -18,9 +18,13 @@ export class AppComponent  {
       route: 'dashboard/about',
     },
     {
-      titulo: 'Experiencias y educación',
-      route: 'dashboard/experiencias',
+      titulo: 'Trabajos propios',
+      route: 'dashboard/portafolio',
     },
+    {
+      titulo: 'Contactame',
+      route: 'dashboard/contacto',
+    }
   ];
 
   title = 'patita';

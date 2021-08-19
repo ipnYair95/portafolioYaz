@@ -10,6 +10,11 @@
       height: 100%;
   }
 
+  .imgT{
+    
+    height: 15rem;
+  }
+
   .flexContainer {
     text-align: center;
     height: auto;
@@ -29,6 +34,9 @@
         display: flex;
         justify-content: center;
         padding-top: 1rem;
+    }
+    .imgT{
+      margin-bottom: 1rem;
     }
     .flexContainer{
         padding: 2rem;

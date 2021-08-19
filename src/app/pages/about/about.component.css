@@ -69,9 +69,19 @@
     transition: 0.5s;
   }
 
+  .animarOn{
+    transition: 0.9s;
+    transform: translate(0px, 30px);
+  }
+
+  .animarOff{
+    transition: 0.9s;
+    transform: translate(0px, 0px);
+  }
+
   .iconos:hover{
-    transition: 0.5s;
-    transform: scale(1.2);
+    transform: scale(1.5);
+    
   }
 
   @media (min-width: 1310px) {

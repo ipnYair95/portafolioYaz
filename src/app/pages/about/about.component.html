@@ -29,8 +29,12 @@
       </div>
     </div>
 
+    <div class="mt-3 mb-4" style="text-align: center">
+      <img src="../../../assets/skil.png" width="250px" height="auto" />
+    </div>
+
     <div class="flexContainer">
-      <img class="iconos" [src]="imagen" *ngFor="let imagen of imagenes">
+      <img class="iconos" [class]="animar()" [src]="imagen" *ngFor="let imagen of imagenes">
     </div>
 
   </div>

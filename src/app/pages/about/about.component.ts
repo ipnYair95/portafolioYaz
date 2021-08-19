@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css'],
 })
 export class AboutComponent implements OnInit {
+  bandera: boolean = false;
+
   abouts = [
     {
       titulo: '¿Quién soy',
@@ -52,9 +54,21 @@ export class AboutComponent implements OnInit {
     '../../../assets/skills/obs.png',
     '../../../assets/skills/office.jpg',
     '../../../assets/skills/premie.png',
-  ]
+  ];
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    setInterval(() => {
+      this.bandera = !this.bandera;
+    }, 1000);
+  }
+
+  animar() {
+    if (this.bandera) {
+      return 'animarOn';
+    }
+
+    return 'animarOff';
+  }
 }

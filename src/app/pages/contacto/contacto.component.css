@@ -1,48 +1,84 @@
-.contenedor {  
-    position: relative;
-    height: 110vh;
-    width: 100%;
-    background-image: linear-gradient(rgb(16 12 12 / 50%), rgb(122 42 42 / 50%)),
-      url("../../../assets/fondo.jpeg");
-    background-size: cover;
-  }
-  .p-5{
-      height: 100%;
-  }
+.contenedor {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(rgb(16 12 12 / 50%), rgb(122 42 42 / 50%)),
+    url("../../../assets/fondo.jpeg");
+  background-size: cover;
+}
+.p-5 {
+  height: 100%;
+}
 
-  .imgT{    
-    height: 15rem;
-  }
+.imgT {
+  height: 15rem;
+}
 
-  .flexContainer {
-    text-align: center;
-    height: auto;
+
+.flexContainer {
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(85 80 100 / 30%);
+  border-radius: 15%;
+  transition: 0.5s;
+}
+
+.flexContainer div{
+  margin: 1rem;
+}
+
+.flexContainer:hover{
+  transition: 0.5s;
+  box-shadow: 0px 2px 10px 6px #86ff2d;
+}
+
+.flexContainer2{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background: rgb(85 80 100 / 30%);
-    border-radius: 15%;    
-  }
-  
+}
 
+.iconR:hover{
+  transition: 0.5s;
+  cursor: pointer;
+}
 
-  @media (max-width: 990px) {
-    .contenedor{
-        height: max-content;
-        display: flex;
-        justify-content: center;
-        padding-top: 1rem;
-    }
-    .imgT{
-      margin-bottom: 1rem;
-      height: 10rem;
-    }
-    .flexContainer{
-        padding: 2rem;
-        width: 60%;
-        width: fit-content;
-        flex-direction: column;
-    }
+.iconR:hover{
+  transition: 0.5s;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.mb-3{
+  width: 20rem;
+}
+
+@media (max-width: 990px) {
+  .contenedor {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
   }
-  
+  .imgT {
+    margin-bottom: 1rem;
+    height: 10rem;
+  }
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mb-3{
+    width: auto;
+  }
+}

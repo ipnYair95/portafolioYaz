@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-img {
+.carousel-item img {
   width: 60%;
   height: auto;
   border-radius: 20px;
@@ -46,7 +46,7 @@ i {
 }
 
 @media (max-width: 500px) {
-  img {
+  .carousel-item img {
     width: 100%;
   }
 }

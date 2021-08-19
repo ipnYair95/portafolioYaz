@@ -10,6 +10,13 @@ import { Mensaje } from '../../services/service.service';
   styleUrls: ['./contacto.component.css'],
 })
 export class ContactoComponent implements OnInit {
+
+  imagenes: string[]= [ 
+    '../../../assets/iconos/whast.png',
+    '../../../assets/iconos/face.png',
+    '../../../assets/iconos/ins.png',
+   ];
+
   forma: FormGroup;
 
   constructor(private fb: FormBuilder, private service: ServiceService) {

@@ -44,6 +44,16 @@ export class AboutComponent implements OnInit {
     },
   ];
 
+  imagenes = [
+    '../../../assets/skills/after.png',
+    '../../../assets/skills/auda.png',
+    '../../../assets/skills/celtx.jpg',
+    '../../../assets/skills/filmo.png',
+    '../../../assets/skills/obs.png',
+    '../../../assets/skills/office.jpg',
+    '../../../assets/skills/premie.png',
+  ]
+
   constructor() {}
 
   ngOnInit(): void {}

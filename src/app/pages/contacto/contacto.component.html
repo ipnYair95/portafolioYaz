@@ -4,43 +4,36 @@
       <img src="../../../assets/contact.png" width="250px" height="auto" />
     </div>
 
-    <div class="flexContainer">
+    <div class="flexContainer p-2">
       <div>Lorem</div>
       <div>
-        <form>
+        <form [formGroup]="forma">
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="name@example.com"
-            />
+            <label for="correo" class="form-label">Email</label>
+            <input formControlName="correo" type="email" class="form-control" id="correo" />
+            <div class="alert alert-danger mt-1" *ngIf="campoInvalido('correo')">
+              <strong>Campo no válido</strong>
+            </div>
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="name@example.com"
-            />
+            <label for="asunto" class="form-label">Asunto</label>
+            <input formControlName="asunto" type="text" class="form-control" id="asunto" />
+            <div class="alert alert-danger mt-1" *ngIf="campoInvalido('asunto')">
+              <strong>Campo no válido</strong>
+            </div>
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >Example textarea</label
-            >
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
+            <label for="mensaje" class="form-label">Mensaje (30 caracteres mínimo) </label>
+            <textarea formControlName="mensaje" class="form-control" id="mensaje" rows="3"></textarea>
+            <div class="alert alert-danger mt-1" *ngIf="campoInvalido('mensaje')">
+              <strong>Campo no válido</strong>
+            </div>
           </div>
         </form>
+
+        <button class="btn btn-primary" (click)="click()" [disabled]="this.forma.invalid" >
+          <i class="fa fa-paper-plane" aria-hidden="true"> Enviar </i>
+        </button>
       </div>
     </div>
   </div>

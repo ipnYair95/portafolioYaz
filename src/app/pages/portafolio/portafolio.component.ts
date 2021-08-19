@@ -11,20 +11,20 @@ export class PortafolioComponent implements OnInit {
   videos = [
     {
       titulo: 'Vida perfecta',
-      target: 'https://www.youtube.com/watch?v=8UN3WBeqpY0'
+      target: `https://www.youtube.com/embed/eoqjGb-g1fk`
     },
     {
       titulo: 'Buscando en la noche',
-      target: 'https://www.youtube.com/watch?v=vsCitnhenJw'
+      target: `https://www.youtube.com/embed/eoqjGb-g1fk`
     },
     {
       titulo: 'Buscando en la noche',
-      target: 'https://www.youtube.com/watch?v=vsCitnhenJw'
+      target: `https://www.youtube.com/embed/eoqjGb-g1fk`
     }
     ,
     {
       titulo: 'Buscando en la noche',
-      target: 'https://www.youtube.com/watch?v=vsCitnhenJw'
+      target: `https://www.youtube.com/embed/eoqjGb-g1fk`
     }
   ]
 
@@ -38,7 +38,9 @@ export class PortafolioComponent implements OnInit {
   }
 
   transform(url: string) : string{
-    return url.split("=")[1];
+    let ruta =  url.split("embed/")[1];
+    console.log(ruta);
+    return ruta;
   }
 
 }

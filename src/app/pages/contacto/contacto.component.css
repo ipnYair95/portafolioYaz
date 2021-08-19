@@ -1,6 +1,6 @@
 .contenedor {  
     position: relative;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-image: linear-gradient(rgb(16 12 12 / 50%), rgb(122 42 42 / 50%)),
       url("../../../assets/fondo.jpeg");
@@ -11,7 +11,8 @@
   }
 
   .flexContainer {
-    height: 84%;
+    text-align: center;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -24,13 +25,16 @@
 
   @media (max-width: 990px) {
     .contenedor{
+        height: max-content;
         display: flex;
         justify-content: center;
         padding-top: 1rem;
     }
     .flexContainer{
         padding: 2rem;
+        width: 60%;
         width: fit-content;
         flex-direction: column;
     }
   }
+  

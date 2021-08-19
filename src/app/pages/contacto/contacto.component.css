@@ -10,8 +10,7 @@
       height: 100%;
   }
 
-  .imgT{
-    
+  .imgT{    
     height: 15rem;
   }
 
@@ -37,6 +36,7 @@
     }
     .imgT{
       margin-bottom: 1rem;
+      height: 10rem;
     }
     .flexContainer{
         padding: 2rem;

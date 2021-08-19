@@ -22,6 +22,10 @@ export class AppComponent  {
       route: 'dashboard/portafolio',
     },
     {
+      titulo: 'Experiencia y educación',
+      route: 'dashboard/experiencias',
+    },
+    {
       titulo: 'Contactame',
       route: 'dashboard/contacto',
     }

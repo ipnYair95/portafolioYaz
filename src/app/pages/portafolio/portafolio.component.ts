@@ -10,20 +10,24 @@ export class PortafolioComponent implements OnInit {
 
   videos = [
     {
-      titulo: 'Vida perfecta',
-      target: `https://www.youtube.com/embed/eoqjGb-g1fk`
+      titulo: 'Programa: Entre mujeres abiertas',
+      descripcion: '',
+      target: `https://www.youtube.com/embed/vKC_IUiiHMU`
     },
     {
-      titulo: 'Buscando en la noche',
-      target: `https://www.youtube.com/embed/eoqjGb-g1fk`
+      titulo: 'Inscripciones a escuela secundaria Nezahualcoyotl',
+      descripcion: '',
+      target: `https://www.youtube.com/embed/hcqLNqPuH3o`
     },
     {
-      titulo: 'Buscando en la noche',
-      target: `https://www.youtube.com/embed/eoqjGb-g1fk`
+      titulo: 'Promo Bikers Crew',
+      descripcion: '',
+      target: `https://www.youtube.com/embed/n-IKvycbxds`
     }
     ,
     {
       titulo: 'Buscando en la noche',
+      descripcion: '',
       target: `https://www.youtube.com/embed/eoqjGb-g1fk`
     }
   ]

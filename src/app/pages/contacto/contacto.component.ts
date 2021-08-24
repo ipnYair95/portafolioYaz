@@ -46,7 +46,7 @@ export class ContactoComponent implements OnInit {
       let mensaje: Mensaje = this.forma.value;
 
       this.service.enviarMensaje(mensaje).subscribe((resp) => {
-        if (resp !== false) {
+        if (resp != false) {
           Swal.fire({
             title: 'Exito',
             text: 'Mensaje enviado con exito',
@@ -65,15 +65,7 @@ export class ContactoComponent implements OnInit {
 
         return;
       });
-
-      Swal.fire({
-        title: 'Error!',
-        text: 'Ha ocurrido un error, por favor revisar sus datos',
-        icon: 'error',
-        confirmButtonText: 'Ok',
-      });
-
-      return;
+  
     }
 
     Swal.fire({

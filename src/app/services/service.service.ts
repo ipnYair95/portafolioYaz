@@ -8,7 +8,7 @@ import { catchError, map } from 'rxjs/operators';
 })
 export class ServiceService {
 
-  private url = "https://formspree.io/f/xleoqlra";
+  private url = "https://formspree.io/f/mzbykwvz";
 
   constructor( private http: HttpClient ) { }
 
@@ -17,7 +17,7 @@ export class ServiceService {
     return this.http.post( this.url, mensaje ).pipe(
       map(resp => {
         //console.log(resp);
-        return resp;
+        return of(true);
       }),
       catchError(err => {
         //console.log(err);

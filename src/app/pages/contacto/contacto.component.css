@@ -1,33 +1,32 @@
 .contenedor {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120vh;
+  height: auto;
   width: 100%;
-  text-align: center;
   background-image: linear-gradient(rgb(16 12 12 / 50%), rgb(122 42 42 / 50%)),
     url("../../../assets/fondo.jpeg");
   background-size: cover;
+  color: #fff;
+  text-align: center;
 }
 .p-5 {
   height: 100%;
 }
 
 .imgT {
-  height: 15rem;
+  width: 100%;
+  height: auto;
 }
 
 
 .flexContainer {
   display: flex;
-  height: fit-content;
   justify-content: center;
   align-items: center;
   text-align: center;
   background: rgb(85 80 100 / 30%);
   border-radius: 15%;
   transition: 0.5s;
+  margin: 0px 15rem;
 }
 
 .flexContainer div{
@@ -46,6 +45,10 @@
     align-items: center;
 }
 
+.flexContainer2 img{
+  width: 5%;
+}
+
 .iconR:hover{
   transition: 0.5s;
   cursor: pointer;
@@ -61,24 +64,34 @@
   width: 20rem;
 }
 
+.form-control input{
+  width: 100%;
+}
+
+@media (min-width: 1400px ) {
+  
+}
+
 @media (max-width: 990px) {
-  .contenedor {
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
+  .contenedor {   
+    height: auto; 
   }
   .imgT {
-    margin-bottom: 1rem;
-    height: 10rem;
+    width: 60%;
+    height: 60%;
   }
-  .flexContainer {
+  .flexContainer {    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0px 1rem;
   }
   .mb-3{
     width: auto;
   }
+  .flexContainer2 img{
+    width: 90px;
+  }
+  
 }

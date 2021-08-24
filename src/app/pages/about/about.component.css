@@ -1,6 +1,6 @@
 .contenedor {  
     position: relative;
-    height: auto;
+    height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgb(16 12 12 / 50%), rgb(122 42 42 / 50%)),
       url("../../../assets/fondo.jpeg");
@@ -84,8 +84,8 @@
     
   }
 
-  @media (min-width: 1310px) {
-    .contenedor{
+  @media ( max-width: 1311px ) {
+    .contenedor{      
       height: auto;
     }
   }

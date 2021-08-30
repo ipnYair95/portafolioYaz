@@ -1,85 +1,62 @@
 <div class="contenedor">
-
-
-  <div style="text-align: center; padding-top: 100px;">
-    <img src="../../../assets/contact.png" width="250px" height="auto" />
-  </div>
-
-  <div class="m-5" >
-    <div class="flexContainer">
-      <div class="col">
-        <img src="../../../assets/than.png" class="imgT" />
+  
+  <div  class="animate__animated animate__fadeIn" style="display: inherit;">
+    <div style="text-align: center; padding-top: 100px;">
+      <img src="../../../assets/contact.png" width="250px" height="auto" />
+    </div>
+    
+    <div class="m-5" >
+      <div class="flexContainer">
+        <div class="col">
+          <img src="../../../assets/than.png" class="imgT" />
+        </div>
+        <div class="col">
+          <form [formGroup]="forma">
+            <div>
+              <label for="correo" class="form-label">Email</label>
+              <input formControlName="correo" type="email" class="form-control" id="correo" />
+              <div class="alert alert-danger mt-1" *ngIf="campoInvalido('correo')">
+                <strong>Campo no válido</strong>
+              </div>
+            </div>
+            <div>
+              <label for="asunto" class="form-label">Asunto</label>
+              <input formControlName="asunto" type="text" class="form-control" id="asunto" />
+              <div class="alert alert-danger mt-1" *ngIf="campoInvalido('asunto')">
+                <strong>Campo no válido</strong>
+              </div>
+            </div>
+            <div>
+              <label for="mensaje" class="form-label">Mensaje (30 caracteres mínimo) </label>
+              <textarea formControlName="mensaje" class="form-control" id="mensaje" rows="3"></textarea>
+              <div class="alert alert-danger mt-1" *ngIf="campoInvalido('mensaje')">
+                <strong>Campo no válido</strong>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="col">
-        <form [formGroup]="forma">
-          <div>
-            <label for="correo" class="form-label">Email</label>
-            <input formControlName="correo" type="email" class="form-control" id="correo" />
-            <div class="alert alert-danger mt-1" *ngIf="campoInvalido('correo')">
-              <strong>Campo no válido</strong>
-            </div>
-          </div>
-          <div>
-            <label for="asunto" class="form-label">Asunto</label>
-            <input formControlName="asunto" type="text" class="form-control" id="asunto" />
-            <div class="alert alert-danger mt-1" *ngIf="campoInvalido('asunto')">
-              <strong>Campo no válido</strong>
-            </div>
-          </div>
-          <div>
-            <label for="mensaje" class="form-label">Mensaje (30 caracteres mínimo) </label>
-            <textarea formControlName="mensaje" class="form-control" id="mensaje" rows="3"></textarea>
-            <div class="alert alert-danger mt-1" *ngIf="campoInvalido('mensaje')">
-              <strong>Campo no válido</strong>
-            </div>
-          </div>
-        </form>
-      </div>
     </div>
-  </div>
-
-  <!-- <div class="flexContainer mt-5">
-    <div class="col">
-      <img src="../../../assets/than.png" class="imgT" />
+    
+    
+    <div class="mt-5">
+      <button class="btn btn-primary mb-2" (click)="click()" [disabled]="this.forma.invalid">
+        <i class="fa fa-paper-plane" aria-hidden="true"> Enviar </i>
+      </button>
     </div>
-    <div class="col">
-      <form [formGroup]="forma">
-        <div>
-          <label for="correo" class="form-label">Email</label>
-          <input formControlName="correo" type="email" class="form-control" id="correo" />
-          <div class="alert alert-danger mt-1" *ngIf="campoInvalido('correo')">
-            <strong>Campo no válido</strong>
-          </div>
-        </div>
-        <div>
-          <label for="asunto" class="form-label">Asunto</label>
-          <input formControlName="asunto" type="text" class="form-control" id="asunto" />
-          <div class="alert alert-danger mt-1" *ngIf="campoInvalido('asunto')">
-            <strong>Campo no válido</strong>
-          </div>
-        </div>
-        <div>
-          <label for="mensaje" class="form-label">Mensaje (30 caracteres mínimo) </label>
-          <textarea formControlName="mensaje" class="form-control" id="mensaje" rows="3"></textarea>
-          <div class="alert alert-danger mt-1" *ngIf="campoInvalido('mensaje')">
-            <strong>Campo no válido</strong>
-          </div>
-        </div>
-      </form>
+    
+    
+    <div class="flexContainer2 mt-4" style="margin-bottom: 50px;">
+      <a [href]="item.target" target="_blank" *ngFor="let item of imagenes">
+        <img [src]="item.img" width="100px" >
+      </a>
+    
+      
     </div>
-  </div> -->
 
-
-  <div class="mt-5">
-    <button class="btn btn-primary mb-2" (click)="click()" [disabled]="this.forma.invalid">
-      <i class="fa fa-paper-plane" aria-hidden="true"> Enviar </i>
-    </button>
   </div>
 
 
-  <div class="flexContainer2 mt-4" style="margin-bottom: 20px;">
-    <img class="iconR mr-3" [src]="item" width="10%" *ngFor="let item of imagenes">
-  </div>
 
 
 </div>

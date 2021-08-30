@@ -27,6 +27,7 @@
   border-radius: 15%;
   transition: 0.5s;
   margin: 0px 15rem;
+  padding: 2px 54px;
 }
 
 .flexContainer div{
@@ -45,16 +46,14 @@
     align-items: center;
 }
 
-.flexContainer2 img{
-  width: 5%;
-}
 
-.iconR:hover{
+
+a{
   transition: 0.5s;
   cursor: pointer;
 }
 
-.iconR:hover{
+a:hover{
   transition: 0.5s;
   transform: scale(1.5);
   cursor: pointer;
@@ -68,7 +67,19 @@
   width: 100%;
 }
 
-@media (min-width: 1400px ) {
+@media (min-height: 900px ) {
+
+  .contenedor{
+    height: 100vh;
+  }
+  
+}
+
+@media (max-width: 1200px ) {
+
+  .flexContainer{
+    margin: 0px;
+  }
   
 }
 
@@ -86,6 +97,7 @@
     align-items: center;
     justify-content: center;
     margin: 0px 1rem;
+    padding: 0px 0px;
   }
   .mb-3{
     width: auto;

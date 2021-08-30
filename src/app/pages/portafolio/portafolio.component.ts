@@ -26,9 +26,9 @@ export class PortafolioComponent implements OnInit {
     }
     ,
     {
-      titulo: 'Buscando en la noche',
+      titulo: 'No te guardo rencor',
       descripcion: '',
-      target: `https://www.youtube.com/embed/eoqjGb-g1fk`
+      target: `https://www.youtube.com/embed/xOSUz62LiH4`
     }
   ]
 

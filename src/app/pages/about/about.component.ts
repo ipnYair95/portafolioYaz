@@ -11,7 +11,10 @@ export class AboutComponent implements OnInit {
   abouts = [
     {
       titulo: '¿Quién soy',
-      descripcion: 'Soy patita cara de godita la pizza con piña es riquisima',
+      descripcion: `Soy una persona que actuá acorde a mis valores personales; el respeto, la honestidad, la empatía, la humildad y la sinceridad. 
+                    Tengo la capacidad de aprovechar las oportunidades que se me presentan, cuento con la habilidad de editar audios 
+                    y videos en diferentes programas, y me gusta aprender de los que tienen más experiencia con el objetivo de llevarlos 
+                    en práctica y conocer sus críticas hacia mis trabajos para mejorar cada día más en el ámbito laboral.`,
     },
     {
       titulo: 'Objetivo',

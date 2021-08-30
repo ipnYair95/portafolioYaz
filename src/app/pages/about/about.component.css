@@ -28,6 +28,12 @@
     flex-wrap: wrap;
   }
 
+  .card-quien{
+    background: rgb(86 65 126 / 50%);
+    border-radius: 2rem;
+    border:none;
+  }
+
   .cardAbout{
     background: rgb(86 65 126 / 50%);
     border-radius: 2rem;

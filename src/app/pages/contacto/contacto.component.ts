@@ -11,12 +11,17 @@ import { Mensaje } from '../../services/service.service';
 })
 export class ContactoComponent implements OnInit {
 
-  imagenes: string[]= [ 
-    '../../../assets/iconos/whast.png',
-    '../../../assets/iconos/face.png',
-    '../../../assets/iconos/ins.png',
-   ];
-
+  imagenes =[
+    {
+      img: '../../../assets/iconos/ins.png',
+      target: 'https://www.instagram.com/yazmin_brum'
+    },
+    {
+      img: '../../../assets/iconos/din.png',
+      target: 'https://www.linkedin.com/in/yazm%C3%ADn-brum-68825818a'
+    }
+  ]
+ 
   forma: FormGroup;
 
   constructor(private fb: FormBuilder, private service: ServiceService) {

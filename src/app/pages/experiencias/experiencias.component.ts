@@ -20,6 +20,11 @@ export class ExperienciasComponent implements OnInit {
       titulo: 'PROCURADURÍA GENERAL DE JUSTICIA',
       img: '../../../assets/pgj.jpg',
       descripcion: `Buscar, escanear, digitalizar y coser expedientes.`
+    },
+    {
+      titulo: 'ASISTENTE EN PROYECCIÓN TV',
+      img: '../../../assets/proy.png',
+      descripcion: `Editar contenido visual y ayudar en transmisiones via streaming`
     }
   ]
 

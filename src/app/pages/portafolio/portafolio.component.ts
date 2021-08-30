@@ -29,6 +29,11 @@ export class PortafolioComponent implements OnInit {
       titulo: 'No te guardo rencor',
       descripcion: '',
       target: `https://www.youtube.com/embed/xOSUz62LiH4`
+    },
+    {
+      titulo: 'Carta al hospital',
+      descripcion: '',
+      target: `https://www.youtube.com/embed/N_9K78f8n3s`
     }
   ]
 

@@ -10,7 +10,7 @@ export class IndexComponent implements OnInit {
   titulo: string[];
 
   constructor() { 
-    this.titulo = 'Yazmin Brum - Lic. Comunicación'.split(" ");
+    this.titulo = 'Yazmín Brum - Lic. Comunicación'.split(" ");
  
   }
 

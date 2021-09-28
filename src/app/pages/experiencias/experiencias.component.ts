@@ -24,7 +24,7 @@ export class ExperienciasComponent implements OnInit {
     {
       titulo: 'ASISTENTE EN PROYECCIÓN TV',
       img: '../../../assets/proy.png',
-      descripcion: `Editar contenido visual y ayudar en transmisiones via streaming`
+      descripcion: `Edición de contenido visual y streamings.`
     }
   ]
 

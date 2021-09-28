@@ -26,7 +26,7 @@ export class AppComponent  {
       route: 'dashboard/experiencias',
     },
     {
-      titulo: 'Contactame',
+      titulo: 'Contáctame',
       route: 'dashboard/contacto',
     }
   ];

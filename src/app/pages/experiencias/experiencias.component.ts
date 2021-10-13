@@ -10,17 +10,7 @@ export class ExperienciasComponent implements OnInit {
   ptrExp: number = 0;
 
 
-  experiencias = [
-    {
-      titulo: 'H. CÁMARA DE DIPUTADOS LXII LEGISLATURA',
-      img: '../../../assets/camara.jpg',
-      descripcion: `Dar mantenimiento a las computadoras, instalar programas, capturar datos y realizar inventarios.`
-    },
-    {
-      titulo: 'PROCURADURÍA GENERAL DE JUSTICIA',
-      img: '../../../assets/pgj.jpg',
-      descripcion: `Buscar, escanear, digitalizar y coser expedientes.`
-    },
+  experiencias = [   
     {
       titulo: 'ASISTENTE EN PROYECCIÓN TV',
       img: '../../../assets/proy.png',

@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent  {
+export class AppComponent  implements OnInit  {
   loading: boolean = false;
 
   items: Item[] = [
@@ -34,7 +34,13 @@ export class AppComponent  {
   title = 'patita';
 
   constructor() {}
-  
+
+  ngOnInit(): void {
+      setTimeout(() => {
+        this.loading = true;
+      }, 2500);
+  }
+
 }
 
 export interface Item {

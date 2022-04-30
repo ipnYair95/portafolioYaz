@@ -1,9 +1,9 @@
-<div>
-  <!-- <div *ngIf="!loading">
-        <app-index-animated> </app-index-animated>
-    </div> -->
-  <div>
-    <app-navbar [items]="items"> </app-navbar>
-    <router-outlet> </router-outlet>
-  </div>
-</div>
+<ng-container *ngIf="!loading">
+  <app-index-animated> </app-index-animated>
+</ng-container>
+
+
+<ng-container *ngIf="loading">
+  <app-navbar [items]="items"> </app-navbar>
+  <router-outlet> </router-outlet>
+</ng-container>

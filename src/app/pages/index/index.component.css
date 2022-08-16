@@ -1,73 +1,96 @@
-.contenedor {  
-  position: relative;
-  height: 101vh;
-  width: 100%;
-  background-image: linear-gradient(rgb(16 12 12 / 50%), rgb(122 42 42 / 50%)),
-    url("../../../assets/fondo.jpeg");
-  background-size: cover;
-}
-
-.flexContainer {
-  opacity: 1;
+.contenedor {
+  background: url("../../../assets/fondo.jpeg") no-repeat center center fixed;
+	background-size: cover;
+	width: 100vw;
+	opacity: 0.9;
+	margin: 0px !important;
+	border: none !important;
+  padding: 15px 10px 20px 10px;
   display: flex;
-  width: 100%;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
 }
 
-.flexColumn {
+.col-content{
+  text-align: center;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  padding: 15px;
+  transition: 0.5s;
 }
 
-img {
-  width: 30vw;
-  height: auto;
+.col-content:hover{
+  transform: translate(0px, -10px);
+  transition: 0.5s;
 }
 
-.titulo {
+.letras{
   color: #c5fffd;
   font-size: xx-large;
   cursor: pointer;
 }
 
-.neon{
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+.neon {
+  text-shadow: none;
 }
 
-.flexTitulo {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+.neon p{
+  margin: 0px;
 }
 
-.caja {
+.avatar{
   width: 200px;
-  height: 200px;
-  background: #fff;
-}
-.flexContainer div {
-  transition: 0.5s;
+  height: 340px;
 }
 
-.flexContainer div:hover {
-  transform: translate(0px, -10px);
-  transition: 0.5s;
+.hello{
+  width: 150px;
 }
 
 
-@media (max-width: 800px ) {
+
+@media screen and (min-width:992px  ) {
+
   .neon{
     text-shadow: none;
   }
-  .neon *{
-    color: #fff;    
+
+  .neon p{
+    font-size: 50px;
   }
+
+  .avatar{
+    width: 250px;
+    height: 440px;
+  }
+
+  .footer{
+    font-size: 30px;
+  }
+
 }
+
+@media screen and (min-width:1200px  ) {
+
+  .contenedor{
+    padding: 15px 80px 20px 80px;
+  }
+
+  .hello{
+    width: 250px;
+  }
+
+  .neon p{
+    font-size: 60px;
+  }
+
+  .avatar{
+    width: 350px;
+    height: 550px;
+  }
+
+}
+

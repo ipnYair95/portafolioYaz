@@ -1,16 +1,15 @@
-<div class="contenedor">
-  <div class="flexContainer animate__animated animate__bounceInUp" style="padding-top: 4rem !important;">
+<div class="contenedor animate__animated animate__bounceInUp">
 
-    <div class="flexColumn">
+  <div class="mt-5" style="text-align: center">
+    <img class="hello" src="../../../assets/hello.png" />
+  </div>
 
-      <div class="mb-5" style="text-align: center">
-        <img src="../../../assets/hello.png" />
-      </div>
-
-      <div class="flexTitulo">
-        <div class="titulo neon" *ngFor="let palabra of titulo">
-          {{ palabra }} &nbsp;
-        </div>
+  <div class="row">
+    <div class="col-12 col-lg-6 col-content">
+      <div class="letras neon" >
+        <p>Yazmín Brum</p>
+        <p>-</p>
+        <p>Lic. Comunicación</p>
       </div>
 
       <a class="btn btn-warning mt-3" routerLink="../about" style="border-radius: 18px;">
@@ -18,19 +17,16 @@
         ¡ Conóceme !
         <i class="fa fa-heart" aria-hidden="true"></i>
       </a>
-
     </div>
 
-    <div>
-      <img src="../../../assets/paw.png" width="300px" height="300px" />
+    <div class="col-12 col-lg-6 col-content">
+      <img class="avatar" src="../../../assets/paw.png" />
     </div>
 
   </div>
 
-  <div class="neon"  style="text-align: center; color: #fff; font-size: larger;">
+  <div class="footer neon" style="text-align: center; color: #fff; font-size: larger;">
     "Tal vez me cortaron las alas, pero nunca dejaré de ser ave." (Gilraen, 2021).
   </div>
 
 </div>
-
-

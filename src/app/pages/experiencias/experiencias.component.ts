@@ -10,7 +10,7 @@ export class ExperienciasComponent implements OnInit {
   ptrExp: number = 0;
 
 
-  experiencias = [   
+  experiencias = [
     {
       titulo: 'ASISTENTE EN PROYECCIÓN TV',
       img: '../../../assets/proy.png',
@@ -20,8 +20,8 @@ export class ExperienciasComponent implements OnInit {
 
   educacion = [
     {
-      titulo: 'LICENCIATURA PASANTE • CIENCIAS DE LA COMUNICACIÓN 2017-2020 • CESCIJUC',
-      img: '../../../assets/com.jpg',      
+      titulo: 'LICENCIATURA • CIENCIAS DE LA COMUNICACIÓN 2017-2020 • CESCIJUC',
+      img: '../../../assets/com.jpg',
       descripcion: `Dar mantenimiento a las computadoras, instalar programas, capturar datos y realizar inventarios.`
     },
     {
@@ -36,7 +36,7 @@ export class ExperienciasComponent implements OnInit {
 
   ngOnInit(): void {
 
-     
+
   }
 
 

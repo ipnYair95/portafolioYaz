@@ -1,13 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@1,500&display=swap');
 
-body,
-.fondo {
+html,
+body {
+	font-family: 'Kaushan Script', sans-serif;
+	background: #000 !important;
+	max-width: 100%;
+	overflow-x: hidden !important;
   background: #dbc8c8;
 }
 
-* {
-  font-family: cursive;
-}
 
 .textBeauty{
   font-size: 40px;
@@ -19,5 +21,8 @@ body,
 }
 
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.title-img{
+  width: 350px;
+  margin: 5px 0px;
+}
+

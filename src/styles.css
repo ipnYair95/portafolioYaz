@@ -35,7 +35,7 @@ html {
 
 section{
   position: absolute;
-  width: 100%;
+  max-width: 100%;
   padding: 25px;
   padding-top: 35px;
 }

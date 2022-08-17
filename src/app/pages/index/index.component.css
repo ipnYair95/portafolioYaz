@@ -19,8 +19,8 @@
  }
 
  .neon {
-  text-shadow: none;
-}
+   text-shadow: none;
+ }
 
  .neon p {
    margin: 0px;
@@ -30,6 +30,7 @@
 
 
  .hello {
+   margin-top: 10px;
    width: 150px;
  }
 

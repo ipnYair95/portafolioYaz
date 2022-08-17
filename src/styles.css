@@ -4,6 +4,7 @@
 html,
 body {
   font-family: 'Kaushan Script', sans-serif;
+	max-width: 100%;
   overflow-x: hidden !important;
 }
 

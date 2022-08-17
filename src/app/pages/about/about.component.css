@@ -1,11 +1,4 @@
-.contenedor {  
-    position: relative;
-    height: auto;
-    width: 100%;
-    background-image: linear-gradient(rgb(16 12 12 / 50%), rgb(122 42 42 / 50%)),
-      url("../../../assets/fondo.jpeg");
-    background-size: cover;
-  }
+
 
   *{
     color: #fff;
@@ -17,7 +10,7 @@
     cursor: pointer;
   }
 
-  .card{   
+  .card{
     transition: 0.5s;
   }
 
@@ -46,7 +39,7 @@
     border-bottom: 5px dotted #c73656;
   }
 
-  .cardAct{    
+  .cardAct{
     background: rgb(65 199 101 / 50%);
     border-radius: 2rem;
     border:none;
@@ -89,7 +82,7 @@
 
   .iconos:hover{
     transform: scale(1.5);
-    
+
   }
 
-   
+

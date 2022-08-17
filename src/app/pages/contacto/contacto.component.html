@@ -1,49 +1,49 @@
-<div class="contenedor animate__animated animate__bounceInUp">
+<section class="animate__animated animate__bounceInUp">
 
   <div class="mt-3" style="text-align: center">
-    <img class="title-img" src="./assets/titulos/6.png" />
+    <img class="title-img" src="./assets/titulos/4.png" />
   </div>
 
-  <div class="container-general">
-    <div class="form-container">
-      <form [formGroup]="forma">
-        <div>
-          <label for="correo" class="form-label">Email</label>
-          <input formControlName="correo" type="email" class="form-control" id="correo" />
-          <div class="alert alert-danger mt-1" *ngIf="campoInvalido('correo')">
-            <strong>Campo no válido</strong>
-          </div>
-        </div>
-        <div>
-          <label for="asunto" class="form-label">Asunto</label>
-          <input formControlName="asunto" type="text" class="form-control" id="asunto" />
-          <div class="alert alert-danger mt-1" *ngIf="campoInvalido('asunto')">
-            <strong>Campo no válido</strong>
-          </div>
-        </div>
-        <div>
-          <label for="mensaje" class="form-label">Mensaje (30 caracteres mínimo) </label>
-          <textarea formControlName="mensaje" class="form-control" id="mensaje" rows="3"></textarea>
-          <div class="alert alert-danger mt-1" *ngIf="campoInvalido('mensaje')">
-            <strong>Campo no válido</strong>
-          </div>
-        </div>
-      </form>
+
+  <form [formGroup]="forma">
+    <div class="row mt-5">
+      <div class="col">
+        <label for="correo" class="form-label">Email</label>
+        <input formControlName="correo" type="email" class="form-control" id="correo"
+          [ngClass]="campoInvalido('correo') ? 'error' : ''" />
+
+      </div>
     </div>
+    <div class="row mt-5">
+      <div class="col">
+        <label for="asunto" class="form-label">Asunto</label>
+        <input formControlName="asunto" type="text" class="form-control" id="asunto"
+          [ngClass]="campoInvalido('asunto') ? 'error' : ''" />
 
-
-    <div class="mt-5 text-center">
-      <button class="btn btn-primary mb-2" (click)="click()" [disabled]="this.forma.invalid">
-        <i class="fa fa-paper-plane" aria-hidden="true"> Enviar </i>
-      </button>
+      </div>
     </div>
+    <div class="row mt-5">
+      <div class="col">
+        <label for="mensaje" class="form-label">Mensaje (30 caracteres mínimo) </label>
+        <textarea formControlName="mensaje" class="form-control" id="mensaje" rows="3"
+          [ngClass]="campoInvalido('mensaje') ? 'error' : ''"></textarea>
+
+      </div>
+    </div>
+  </form>
 
 
 
+  <div class="mt-5 text-center">
+    <button class="btn btn-primary mb-2" (click)="click()" [disabled]="this.forma.invalid">
+      <i class="fa fa-paper-plane" aria-hidden="true"> Enviar </i>
+    </button>
   </div>
+
+
 
   <div class="footer neon" style="text-align: center; color: #fff; font-size: larger;">
     "Tal vez me cortaron las alas, pero nunca dejaré de ser ave." (Gilraen, 2021).
   </div>
 
-</div>
+</section>

@@ -3,15 +3,20 @@
 
 html,
 body {
-	font-family: 'Kaushan Script', sans-serif;
-	background: #000 !important;
-	max-width: 100%;
-	overflow-x: hidden !important;
-  background: #dbc8c8;
+  font-family: 'Kaushan Script', sans-serif;
+  overflow-x: hidden !important;
+}
+
+html {
+  background: url('assets/fondo.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
-.textBeauty{
+.textBeauty {
   font-size: 40px;
   letter-spacing: 0.1em;
   -webkit-text-fill-color: transparent;
@@ -21,8 +26,22 @@ body {
 }
 
 
-.title-img{
+.title-img {
   width: 350px;
   margin: 5px 0px;
 }
 
+
+section{
+  position: absolute;
+  width: 100%;
+  padding: 25px;
+  padding-top: 35px;
+}
+
+
+hr{
+  height: 10px;
+  color: #ffff;
+  border-radius: 25px;
+}

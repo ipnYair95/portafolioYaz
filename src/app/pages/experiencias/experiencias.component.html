@@ -1,69 +1,72 @@
-<div class="contenedor">
+<section class="animate__animated animate__bounceInUp">
 
-  <div class="animate__animated animate__fadeIn p-5">
+  <div class="animate__animated animate__fadeIn">
     <div class="mt-3" style="text-align: center">
-      <img class="title-img" src="./assets/titulos/4.png"/>
+      <img class="title-img" src="./assets/titulos/5.png" />
     </div>
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" *ngFor="let item of experiencias.slice(0,1)">
-          <img [src]="item.img" >
+          <img [src]="item.img">
           <div class="desc">
-            <p style="text-shadow: 4px 5px 4px #93d150; font-size: x-large;" > {{ item.titulo }} </p>
+            <p style="text-shadow: 4px 5px 4px #93d150; font-size: xx-large;"> {{ item.titulo }} </p>
             <p> {{ item.descripcion }} </p>
           </div>
         </div>
         <div class="carousel-item " *ngFor="let item of experiencias.slice(1)">
-          <img [src]="item.img" >
+          <img [src]="item.img">
           <div class="desc">
-            <p style="text-shadow: 4px 5px 4px #93d150; font-size: x-large;" > {{ item.titulo }} </p>
-            <p> {{ item.descripcion }} </p>
+            <p style="text-shadow: 4px 5px 4px #93d150; font-size: xx-large;"> {{ item.titulo }} </p>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
         <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
         <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
       </button>
     </div>
 
   </div>
 
-  <div class="animate__animated animate__fadeIn p-5">
+  <hr>
+
+  <div class="animate__animated animate__fadeIn">
     <div class="mt-3" style="text-align: center">
-      <img class="title-img" src="./assets/titulos/5.png"/>
+      <img class="title-img" src="./assets/titulos/6.png" />
     </div>
 
-    <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions2" class="carousel slide mt-5" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-inner">
           <div class="carousel-item active" *ngFor="let item of educacion.slice(0,1)">
-              <img [src]="item.img" >
-              <div class="desc">
-                <p style="text-shadow: 4px 5px 4px #93d150; font-size: x-large;" > {{ item.titulo }} </p>
-              </div>
+            <img [src]="item.img">
+            <div class="desc">
+              <p style="text-shadow: 4px 5px 4px #93d150; font-size: x-large;"> {{ item.titulo }} </p>
             </div>
-            <div class="carousel-item " *ngFor="let item of educacion.slice(1)">
-              <img [src]="item.img" >
-              <div class="desc">
-                <p style="text-shadow: 4px 5px 4px #93d150; font-size: x-large;" > {{ item.titulo }} </p>
-              </div>
+          </div>
+          <div class="carousel-item " *ngFor="let item of educacion.slice(1)">
+            <img [src]="item.img">
+            <div class="desc">
+              <p style="text-shadow: 4px 5px 4px #93d150; font-size: x-large;"> {{ item.titulo }} </p>
             </div>
+          </div>
         </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
-        <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
-        <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-      </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"
+          data-bs-slide="prev">
+          <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"
+          data-bs-slide="next">
+          <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+        </button>
+      </div>
+
     </div>
-
   </div>
 
-  <div class="mt-5">sdd</div>
-  </div>
-
-</div>
+</section>
